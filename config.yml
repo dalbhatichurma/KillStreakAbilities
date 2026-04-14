@@ -1,0 +1,39 @@
+# =============================================
+#   KillStreakAbilities Configuration
+# =============================================
+
+# Save streaks to YAML on server shutdown
+save-streaks: true
+
+# ── Streak Milestones ────────────────────────
+streaks:
+  speed:
+    enabled: true
+    kills-required: 3
+    amplifier: 1          # 0 = Speed I, 1 = Speed II
+    duration-seconds: 30
+
+  strength:
+    enabled: true
+    kills-required: 5
+    amplifier: 0          # 0 = Strength I, 1 = Strength II
+    duration-seconds: 30
+
+  god-mode:
+    enabled: true
+    kills-required: 10
+    duration-seconds: 10
+
+# ── Feedback ─────────────────────────────────
+feedback:
+  sounds-enabled: true
+  particles-enabled: true
+  titles-enabled: true
+  bossbar-enabled: true
+
+# ── Messages ─────────────────────────────────
+messages:
+  prefix: "&c&lKS &8» &r"
+  streak-announce: "&e%player% &7is on a &c%streak% kill streak&7!"
+  streak-reset: "&7Your kill streak has been &creset&7."
+  god-mode-end: "&cGod Mode &7has worn off!"

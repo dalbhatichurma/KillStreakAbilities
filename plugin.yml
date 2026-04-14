@@ -1,0 +1,18 @@
+name: KillStreakAbilities
+version: 1.0.0
+main: com.killstreak.KillStreakAbilities
+api-version: '1.21'
+author: YourName
+description: PvP kill streak system with unlockable abilities
+
+commands:
+  killstreak:
+    description: Manage kill streaks
+    usage: /killstreak <reset|check|reload> [player]
+    aliases: [ks]
+    permission: killstreak.admin
+
+permissions:
+  killstreak.admin:
+    description: Access to all killstreak commands
+    default: op
